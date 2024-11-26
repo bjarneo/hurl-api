@@ -27,6 +27,10 @@ app.get('/users', (req, res) => {
   res.status(200).json(users);
 });
 
+app.post('/users', (req, res) => {
+  res.status(200).json(req.body);
+});
+
 // Auth token endpoint
 app.get('/token', (req, res) => {
   // In a real application, you would implement proper authentication
